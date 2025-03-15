@@ -13,32 +13,27 @@
                 </tr>
             </tbody>
         </table>
-    <div class="ticket-content" style="background-color: #ffffff; padding: 20px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
-        <p><strong><br></strong>Olá, <strong>##ticket.authors##</strong>!</p>
-        <p>O chamado<strong> </strong>"<a href="##ticket.url##" target="_blank" rel="noopener"><strong>##ticket.title##</strong></a>" foi <strong>solucionado</strong>!</p>
-        <p><strong>N.º do chamado: ##ticket.id##</strong></p>
+    </div>
+    <div class="ticket-content" style="background-color: #ffffff; padding: 20px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); font-size: 18px;">
+        <p><br>Olá, Você foi atribuído ao chamado<strong> </strong>"<a href="##ticket.url##" target="_blank" rel="noopener"><strong>##ticket.title##</strong></a>"</p>
+        <p><strong>N.º do chamado:</strong> <strong>##ticket.id##</strong></p>
         <div style="border-top: 1px solid #ccc; margin: 10px 0;"> </div>
         <p><strong>Descrição:</strong></p>
-        ##ticket.solution.description## 
+        ##ticket.content## 
         <div style="border-top: 1px solid #ccc; margin: 10px 0;"> </div>
-        <p><strong>Solucionado por:</strong> ##ticket.solution.author##</p>
         <p><strong>Categoria:</strong> ##ticket.category##</p>
         <p><strong>Urgência:</strong> ##ticket.urgency##</p>
         <p><strong>Autor:</strong> ##ticket.authors##</p>
-        <p><strong>Data de abertura:</strong> ##ticket.creationdate##</p>
-        <p><strong>Data da solução:</strong> ##ticket.solvedate##</p>
-        <p> </p>
+        <p><strong>Data de abertura:</strong> ##ticket.creationdate##<br><br></p>
         <div style="text-align: center;">
-            <strong><a class="x_primary-font x_button" style="display: inline-block; font-size: 16px; font-family: Arial, sans-serif; color: white; text-decoration: none; background-color: #e81213; border-radius: 50px; padding: 12px 18px; border: 1px solid #FFFFFF; box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);" href="##ticket.url##" target="_blank" rel="noopener noreferrer"> VISUALIZAR CHAMADO</a></strong>
+            <strong> 
+                <a class="x_primary-font x_button" style="display: inline-block; font-size: 16px; font-family: Arial, sans-serif; color: white; text-decoration: none; background-color: #e81213; border-radius: 50px; padding: 12px 18px; border: 1px solid #FFFFFF; box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);" href="##ticket.url##" target="_blank" rel="noopener noreferrer"> VISUALIZAR CHAMADO </a> 
+            </strong>
         </div>
         <div style="text-align: center;"> </div>
-        <div style="text-align: center;"> </div>
-        <div style="text-align: center;">
-            <strong>Por favor, finalize e avalie o atendimento, sua opinião é importante para nós!<br><br></strong>
-        </div>
         <div style="border-top: 1px solid #ccc; margin: 3px 0;"> </div>
         <div style="text-align: center; margin-top: 10px; font-size: 16px;">
-            <p style="font-size: 14px; color: #5d5d5d; line-height: 1.8;">Acesse o GLPI para:<br>Maiores detalhes sobre esse atendimento.<br>Acompanhar seus atendimentos.<br>Abrir novas requisições.</p>
+            <p style="color: #5d5d5d; line-height: 1.8;">Acesse o GLPI para:<br>Maiores detalhes sobre esse atendimento.<br>Acompanhar seus atendimentos.<br>Abrir novas requisições.</p>
         </div>
     </div>
 </div>
