@@ -1,58 +1,44 @@
 <div class="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: -1;"></div>
 
-<div class="content-container" style="margin: 0 auto; background-color: #ebeff2; max-width: 640px; padding: 20px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); font-size: 18px;">
-    
-    <div class="header" style="background-color: #ebeff2; padding: 20px; width: 100%; box-sizing: border-box;">
-        <table style="width: 100%; border: 0; table-layout: fixed;">
-            <tbody>
-                <tr>
-                    <td style="text-align: left; padding: 0; width: 50%;">
-                        <img src="https://imgs.search.brave.com/P52nRiees750OFU7B3vz2JZzebhfFTOog3rAzBaXcI8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9taXhh/bGltZW50b3MuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzEyL21peC1h/bGltZW50b3MtbG9n/by10b3BvLnBuZw" alt="Logo 1" width="156" height="84">
-                    </td>
-                    <td style="text-align: right; padding: 0; width: 50%;">
-                        <img src="https://imgs.search.brave.com/O3QDHZgkFOSqxOXoIvM4rhXuyI2YC5jrcmLmgBzGiJU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC5icmFuZGZldGNo/LmlvL2lkX1Q1dzRU/b1MvaWRMMG5mNjBJ/Vi5wbmc_dXBkYXRl/ZD0xNzE2ODE3NDM5/Mzk4" alt="Logo 2" width="156" height="106">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<div class="content-container" style="margin: 0 auto; background-color: #ebeff2; max-width: 640px; padding: 20px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); font-size: 18px;">
+  <div class="header" style="background-color: #ebeff2; padding: 20px; width: 100%; box-sizing: border-box;">
+    <table style="width: 100%; border: 0; table-layout: fixed;">
+      <tbody>
+        <tr>
+          <td style="text-align: left; padding: 0; width: 50%;">
+            <img src="https://imgs.search.brave.com/P52nRiees750OFU7B3vz2JZzebhfFTOog3rAzBaXcI8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9taXhh/bGltZW50b3MuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzEyL21peC1h/bGltZW50b3MtbG9n/by10b3BvLnBuZw" alt="Logo 1" width="156" height="84">
+          </td>
+          <td style="text-align: right; padding: 0; width: 50%;">
+            <img src="https://imgs.search.brave.com/O3QDHZgkFOSqxOXoIvM4rhXuyI2YC5jrcmLmgBzGiJU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC5icmFuZGZldGNo/LmlvL2lkX1Q1dzRU/b1MvaWRMMG5mNjBJ/Vi5wbmc_dXBkYXRl/ZD0xNzE2ODE3NDM5/Mzk4" alt="Logo 2" width="156" height="106">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ticket-content" style="background-color: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); line-height: 1.9;">
+    <p><br>Olá, <strong>##ticket.authors##</strong>!</p>
+
+    <p>Gostaríamos de informar que sua solicitação "<strong>##ticket.title##</strong>" (<strong>n.º ##ticket.id##</strong>) foi concluída em <strong>##ticket.solvedate##</strong>.</p>
+
+    <p>Sua opinião faz toda a diferença para nós! Por isso, gostaríamos de convidá-lo a participar da nossa <strong>pesquisa de satisfação</strong>. Seu feedback é essencial para aprimorarmos continuamente nossos serviços.</p>
+
+    <p>Basta clicar no botão abaixo para acessar a página inicial do GLPI e avaliar seu atendimento com uma nota de <strong>1 a 5 estrelas</strong>. Se quiser, também pode deixar um comentário adicional.</p>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <a class="x_primary-font x_button" style="display: inline-block; font-size: 17px; font-family: Arial, sans-serif; color: white; text-decoration: none; background-color: #e81213; border-radius: 30px; padding: 12px 24px; border: 1px solid #ffffff; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);" href="##glpi.url##" target="_blank" rel="noopener noreferrer">
+        <strong>RESPONDER AVALIAÇÃO</strong>
+      </a>
     </div>
 
-    <div class="ticket-content" style="background-color: #ffffff; padding: 20px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); line-height: 1.9;">
-        <p><br>Olá, <strong>##ticket.authors##</strong>!</p>
-        <p>
-            Gostaríamos de informar que sua solicitação "<strong>##ticket.title##</strong>" 
-            (<strong>n.º ##ticket.id##</strong>) foi concluída em <strong>##ticket.solvedate##</strong>.
-        </p>
-        <p>
-            Sua opinião faz toda a diferença para nós! Por isso, gostaríamos de convidá-lo a participar da nossa 
-            <strong>pesquisa de satisfação</strong>. Seu feedback é essencial para aprimorarmos continuamente nossos serviços.
-        </p>
-        <p>
-            Basta clicar no botão abaixo para acessar a página inicial do GLPI e avaliar seu atendimento com uma nota de 
-            <strong>1 a 5 estrelas</strong>. Se quiser, também pode deixar um comentário adicional.
-        </p>
-
-        <div style="text-align: center; margin-top: 10px;">
-                <a class="x_primary-font x_button" 
-                    style="display: inline-block; font-size: 17px; font-family: Arial,sans-serif; color: white; 
-                    text-decoration: none; background-color: #e81213; border-radius: 50px; padding: 12px 18px; 
-                    border: 1px solid #FFFFFF; box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);" 
-                    href="##ticket.urlsatisfaction##" 
-                    target="_blank" 
-                    rel="noopener noreferrer">
-                    <strong> RESPONDER AVALIAÇÃO </strong>
-                </a>
-        </div>
-
-        <div style="text-align: center; font-size: 16px; margin-top: 20px;">
-            Agradecemos a sua colaboração!
-        </div>
-
-        <div style="border-top: 1px solid #ccc; margin: 20px 0;"></div>
-
-        <!-- Imagem inferior ajustada -->
-        <div style="text-align: center;">
-            <img src="https://github.com/italoglhrm/ticketsGLPI/blob/main/Untitled%20(1).jpg?raw=true" alt="flyerMix" style="max-width: 100%; height: auto; border-radius: 20px;">
-        </div>
+    <div style="text-align: center; font-size: 16px; margin-top: 20px;">
+      Agradecemos a sua colaboração!
     </div>
+
+    <div style="border-top: 1px solid #ccc; margin: 20px 0;"></div>
+
+    <div style="text-align: center;">
+      <img style="max-width: 100%; height: auto; border-radius: 12px;" src="https://github.com/italoglhrm/ticketsGLPI/blob/main/Untitled%20(1).jpg?raw=true" alt="flyerMix">
+    </div>
+  </div>
 </div>
