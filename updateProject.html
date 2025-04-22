@@ -1,5 +1,7 @@
-<div class="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: -1;"> </div>
-<div class="content-container" style="margin: 0 auto; background-color: #ebeff2; max-width: 640px; padding: 20px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); font-size: 18px;">
+<div class="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: -1;">
+</div>
+
+<div class="content-container" style="margin: 0 auto; background-color: #ebeff2; max-width: 640px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); font-size: 18px;">
     <div class="header" style="background-color: #ebeff2; padding: 20px; width: 100%; box-sizing: border-box;">
         <table style="width: 100%; border: 0; table-layout: fixed;">
             <tbody>
@@ -14,29 +16,42 @@
             </tbody>
         </table>
     </div>
-    <div class="ticket-content" style="background-color: #ffffff; padding: 20px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); font-size: 18px;">
+
+    <div class="ticket-content" style="background-color: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); font-size: 18px;">
         <p><br>Olá!</p>
-        <p>O projeto "<a href="##project.url##" target="_blank" rel="noopener"><strong>##project.name##</strong></a>" foi atualizado no GLPI.</p>
-        <div style="border-top: 1px solid #ccc; margin: 10px 0;"> </div>
+        <p>Novo projeto "<a href="##project.url##" target="_blank" rel="noopener"><strong>##project.name##</strong></a>" foi criado no GLPI.</p>
+
+        <div style="border-top: 1px solid #ccc; margin: 10px 0;"> </div>
+
         <p><strong>Descrição:</strong></p>
         ##project.description## <br>
-        <div style="border-top: 1px solid #ccc; margin: 10px 0;"> </div>
+
+        <div style="border-top: 1px solid #ccc; margin: 10px 0;"> </div>
+
         <p><strong>Gerente:</strong> ##project.manager##</p>
-        <p><strong>Status:</strong> ##project.state##</p>
+        <p><strong>Status: ##project.state##</strong></p>
         <p><strong>Data de criação:</strong> ##project.creationdate##</p>
-        <p><strong>Urgência:</strong> ##project.priority##</p>
+        <p><strong>Urgência:</strong> ###project.priority##</p>
+
         <div style="text-align: center;">
-            <strong>
-                <br>
-                <a class="x_primary-font x_button" style="display: inline-block; font-size: 16px; font-family: Arial, sans-serif; color: white; text-decoration: none; background-color: #e81213; border-radius: 50px; padding: 12px 18px; border: 1px solid #FFFFFF; box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);" href="##project.url##" target="_blank" rel="noopener noreferrer"> VISUALIZAR PROJETO </a>
-                <br>
+            <strong><br>
+                <a class="x_primary-font x_button" style="display: inline-block; font-size: 16px; font-family: Arial, sans-serif; color: white; text-decoration: none; background-color: #e81213; border-radius: 12px; padding: 12px 18px; border: 1px solid #FFFFFF; box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);" href="##project.url##" target="_blank" rel="noopener noreferrer">
+                    VISUALIZAR PROJETO
+                </a><br>
             </strong>
         </div>
-        <div style="text-align: center;"> </div>
-        <div style="border-top: 1px solid #ccc; margin: 3px 0;"> </div>
+
+        <div style="text-align: center;"> </div>
+
+        <div style="border-top: 1px solid #ccc; margin: 3px 0;"> </div>
+
         <div style="text-align: center; margin-top: 10px; font-size: 16px;">
             <p style="color: #5d5d5d; line-height: 1.8;">
-                Acesse o GLPI para:<br>Acompanhar seus atendimentos e projetos.<br>Abrir novas requisições.<br>E muito mais!</p>
+                Acesse o GLPI para:<br>
+                Acompanhar seus atendimentos e projetos.<br>
+                Abrir novas requisições.<br>
+                E muito mais!
+            </p>
         </div>
     </div>
 </div>
